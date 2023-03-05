@@ -1,36 +1,28 @@
 import 'package:app/app.dart' as app;
 
 void main(/*List<String> arguments*/) {
-  Mobile mobile = new Mobile(3.2, "Iphone");
+  Samsung s20 = new Samsung();
+  s20.camera = "S20Camera";
 
-  mobile.printScreen();
+  print(s20.camera);
 
-  mobile.changeName ="Iphone PRO MAX";
+  s20.memory = "8G";
 
-  print("and Name: " + mobile.mobileName);
-
-  //print('Hello world: ${app.calculate()}!');
+  s20.printMobileMemory();
 }
 
 //OOP
 class Mobile {
-  double screen = 6.4;
-  String name = "Iphone pro Max";
+  String screen = "";
+  String camera = "";
+  String cpu = "";
+  String memory = "";
 
-  Mobile(new_screen, new_name) {
-    this.screen = new_screen;
-    this.name = new_name;
+  void printMobileMemory() {
+    print(this.memory);
   }
+}
 
-  void printScreen() {
-    screen > 5.6 ? print("Large Screen") : print("Small Screen");
-  }
-
-  void set changeName(newName) {
-    this.name = newName;
-  }
-
-  String get mobileName {
-    return this.name;
-  }
+class Samsung extends Mobile {
+  String brand = "Samsung";
 }
