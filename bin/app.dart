@@ -5,9 +5,9 @@ void main(/*List<String> arguments*/) {
 
   mobile.printScreen();
 
-  mobile.setName("Iphone PRO MAX");
+  mobile.changeName ="Iphone PRO MAX";
 
-  print("and Name: " + mobile.getName());
+  print("and Name: " + mobile.mobileName);
 
   //print('Hello world: ${app.calculate()}!');
 }
@@ -26,11 +26,11 @@ class Mobile {
     screen > 5.6 ? print("Large Screen") : print("Small Screen");
   }
 
-  void set setName(newName) {
+  void set changeName(newName) {
     this.name = newName;
   }
 
-  String get getName() {
+  String get mobileName {
     return this.name;
   }
 }
