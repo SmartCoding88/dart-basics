@@ -26,11 +26,11 @@ class Mobile {
     screen > 5.6 ? print("Large Screen") : print("Small Screen");
   }
 
-  void setName(newName) {
+  void set setName(newName) {
     this.name = newName;
   }
 
-  String getName() {
+  String get getName() {
     return this.name;
   }
 }
