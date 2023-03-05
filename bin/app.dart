@@ -13,10 +13,10 @@ void main(/*List<String> arguments*/) {
 
 //OOP
 class Mobile {
-  String screen = "";
+  String screen = "6.3";
   String camera = "";
   String cpu = "";
-  String memory = "";
+  String memory = "8G";
 
   void printMobileMemory() {
     print(this.memory);
@@ -25,4 +25,10 @@ class Mobile {
 
 class Samsung extends Mobile {
   String brand = "Samsung";
+  String memory = "16G";
+  //override
+  @override
+  void printMobileMemory() {
+    print("Memory: $memory");
+  }
 }
